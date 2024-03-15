@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"/>
+
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
@@ -26,7 +28,7 @@
 
     <span class="text-white font-medium">Rua dev 10, Salvador - BA</span>
 
-    <div class="bg-green-600 px-4 py-1 rounded-lg mt-5 " id="sate-span">
+    <div class="bg-green-600 px-4 py-1 rounded-lg mt-5 " id="date-span">
         <span class="text-white font-medium">Seg á Dom - 18:00 as 22:00 </span>
 
     </div>
@@ -49,7 +51,7 @@
 
         <div>
             <p class="font-bold">Hamburguer Smash</p>
-            <p class="text-sm">Pão levinho de fermentação natural da Trigou, burger 160g, queijo prato e maionese da casa.</p>
+            <p class="text-sm">O Hamburguer Smash é uma verdadeira obra-prima da grelha, com sua carne suculenta prensada e selada, criando uma crosta irresistível por fora e mantendo toda a umidade e sabor por dentro. Uma experiência única para os verdadeiros apreciadores da culinária grelhada.</p>
 
             <div class="flex items-center gap-2 justify-between mt-3">
                 <p class="font-bold text-lg">R$ 18.90</p>
@@ -70,7 +72,7 @@
 
         <div>
             <p class="font-bold">Hamburguer Duplo</p>
-            <p class="text-sm">Pão levinho de fermentação natural da Trigou, burger 160g, queijo prato e maionese da casa.</p>
+            <p class="text-sm">Hambúrguer suculento com carne grelhada e delicioso queijo cheddar derretido.</p>
 
             <div class="flex items-center gap-2 justify-between mt-3">
                 <p class="font-bold text-lg">R$ 32.90</p>
@@ -87,16 +89,16 @@
     <!--produto 3-->
 
     <div class="flex gap-2">
-        <img src="./assets/hamb-3.png" alt="Hamburguer Salad" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+        <img src="./assets/hamb-3.png" alt="Hamburguer Cheddar" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
 
         <div>
-            <p class="font-bold">Hamburguer Salad</p>
-            <p class="text-sm">Pão levinho de fermentação natural da Trigou, burger 160g, queijo prato e maionese da casa.</p>
+            <p class="font-bold">Hamburguer Cheddar</p>
+            <p class="text-sm">Delicioso hambúrguer com queijo cheddar derretido, uma explosão de sabor em cada mordida.</p>
 
             <div class="flex items-center gap-2 justify-between mt-3">
                 <p class="font-bold text-lg">R$ 35.90</p>
                 <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                    data-name="Hamburguer Salad" data-price="35.90"
+                    data-name="Hamburguer Cheddar" data-price="35.90"
                 >
                     <i class="fa fa-cart-plus text-lg text-white"></i>
                 </button>
@@ -108,11 +110,11 @@
     <!--Produto 4-->
 
     <div class="flex gap-2">
-        <img src="./assets/hamb-4.png" alt="Hamburguer Smash" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+        <img src="./assets/hamb-4.png" alt="Hamburguer Da Casa" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
 
         <div>
             <p class="font-bold">Hamburguer Da Casa</p>
-            <p class="text-sm">Pão levinho de fermentação natural da Trigou, burger 160g, queijo prato e maionese da casa.</p>
+            <p class="text-sm">Nosso hambúrguer da casa é uma combinação irresistível de ingredientes frescos e suculenta carne, uma experiência gastronômica única e saborosa.</p>
 
             <div class="flex items-center gap-2 justify-between mt-3">
                 <p class="font-bold text-lg">R$ 30</p>
@@ -126,6 +128,95 @@
 
     </div>
 
+    <!--Produto 5-->
+
+    <div class="flex gap-2">
+        <img src="./assets/hamb-5.png" alt="Hamburguer Super Salad" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+        <div>
+            <p class="font-bold">Hamburguer Super Salad</p>
+            <p class="text-sm">O Super Salad é a opção saudável e deliciosa do nosso cardápio, repleto de ingredientes frescos e nutritivos para uma refeição equilibrada e cheia de sabor.</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-lg">R$ 25</p>
+                <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                    data-name="Hamburguer Super Salad" data-price="25"
+                >
+                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Produto 6-->
+
+    <div class="flex gap-2">
+        <img src="./assets/hamb-6.png" alt="Hamburguer Barbecue" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+        <div>
+            <p class="font-bold">Hamburguer Barbecue</p>
+            <p class="text-sm">O Hamburguer Barbecue é uma explosão de sabor defumado, com carne suculenta e molho barbecue irresistível, uma escolha perfeita para os amantes de um bom churrasco.</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-lg">R$ 25.50</p>
+                <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                    data-name="Hamburguer Barbecue" data-price="25.50"
+                >
+                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Produto 7-->
+
+    <div class="flex gap-2">
+        <img src="./assets/hamb-7.png" alt="Hambúrguer com cebolas empanadas
+        " class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+        <div>
+            <p class="font-bold">Hambúrguer com cebolas empanadas
+            </p>
+            <p class="text-sm">O Hamburguer com Cebolas Empanadas é uma combinação de sabores crocantes e suculentos, onde a carne é complementada pelas cebolas empanadas, criando uma experiência única de texturas e aromas.</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-lg">R$ 40</p>
+                <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                    data-name="Hambúrguer com cebolas empanadas
+                    " data-price="40"
+                >
+                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Produto 8-->
+
+    <div class="flex gap-2">
+        <img src="./assets/hamb-8.png" alt="Hambúrguer Vegano
+        " class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+        <div>
+            <p class="font-bold">Hambúrguer Vegano
+            </p>
+            <p class="text-sm">O Hamburguer Vegano oferece uma opção saudável e saborosa, repleta de ingredientes frescos e naturais, perfeita para os amantes de uma alimentação consciente.</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-lg">R$ 15</p>
+                <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                    data-name="Hambúrguer Vegano
+                    " data-price="15"
+                >
+                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+            </div>
+        </div>
+
+    </div>
 
 </main>
 
@@ -155,6 +246,7 @@
         </div>
 
     </div>
+
     <!--Fim Bebida Item-->
 
     <div class="flex gap-2 w-full">
@@ -185,7 +277,7 @@
 </div> <!--Fim Menu-->
 
 <!--Modal Card-->
-<div class="bg-black/60 w-full h-full fixed top-0 left-0 z-9[99]  items-center justify-center hidden">
+<div class="bg-black/60 w-full h-full fixed top-0 left-0 z-9[99]  items-center justify-center hidden " id="cart-Modal">
     <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
         <h2 class="text-center font-bold text-2xl mb-2 ">Meu carrinho</h2>
 
@@ -198,7 +290,7 @@
             type="text"
             placeholder="Digite o seu endereço completo..."
             id="address"
-            class="w-full-border-2 p-1 my-1" 
+            class="w-full border-2 p-1 my-1" 
         />
         <p class="text-red-500 hidden" id="address-warn">Digite seu endereço completo!</p>
 
@@ -221,7 +313,7 @@
 
 <footer class="w-full bg-red-500 py-3 fixed bottom-0 z-40 flex items-center justify-center">
     <button class="flex-center gap-2 text-white font-bold" id="cart-btn">
-        (<span id="cart-count" >0</span>)
+        (<span id="cart-count" > 0 </span>)
         Veja meu carrinho
         <i class="fa fa-card-plus text-lg text-white" ></i>
     </button>
@@ -230,6 +322,9 @@
 
 
 <!-- FIM BUTTON CARD FOOTER-->
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
